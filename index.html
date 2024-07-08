@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="./style.css">
+
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="content">
+        <main class="main">
+
+            <div class="state">
+                <h1 class="state__title">Пары</h1>
+                <p class="state__moves">Шаги: 0 шагов </p>
+                <p class="state__time">Время: 60 секунд</p>
+            </div>
+            <div class="board" id="game__board">
+                <h2 class="board__title">Настроить количество карточек ( от 2 до 6 ) </h2>
+                <form class="board__form"></form>
+                <input type="number" min="2" max="6" step="2" class="board__input"
+                    placeholder="По вертикали / горизонтали">
+                <button type="button" class="board__button button">Начать</button>
+            </div>
+        </main>
+    </div>
+    <template id="gameTableTemplate">
+        <div class="table">
+            <button class="table__button button">
+                Рестарт
+            </button>
+        </div>
+    </template>
+    <template id="cardTemplate">
+        <div class="card">
+            <i class="flipped-icon fa" id="flipped-icon"> </i>
+            <i class="flipped-icon fa fa-question-circle"> </i>
+        </div>
+    </template>
+<div class="confetti"></div>
+    <script type="module" src="./index.js"></script>
+</body>
+
+</html>
